@@ -1,0 +1,28 @@
+{
+  "dotnet.server.useOmnisharp": false,
+  "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
+  "dotnet.completion.showNameCompletionSuggestions": true,
+  "dotnet.completion.provideRegexCompletions": true,
+  "dotnet.completion.triggerCompletionInArgumentLists": true,
+  "dotnet.autoInsert.enableAutoInsert": true,
+  "files.associations": {
+    "*.cs": "csharp"
+  },
+  "files.exclude": {
+    "**/bin": true,
+    "**/obj": true
+  },
+  "[csharp]": {
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.parameterHints.enabled": true,
+    "editor.tabCompletion": "on",
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnType": true,
+    "editor.wordBasedSuggestions": "off"
+  }
+}

@@ -1,0 +1,16 @@
+@host = http://localhost:5109
+
+### List canonical unit names
+GET {{host}}/api/v1/units
+
+### Convert 100 meters to feet
+GET {{host}}/api/v1/conversions?value=100&from=meter&to=foot
+
+### Convert boiling water to Fahrenheit
+GET {{host}}/api/v1/conversions?value=100&from=celsius&to=fahrenheit
+
+### Unknown unit
+GET {{host}}/api/v1/conversions?value=1&from=furlong&to=meter
+
+### Incompatible categories
+GET {{host}}/api/v1/conversions?value=1&from=meter&to=kilogram
